@@ -2,10 +2,6 @@ import java.util.Scanner;
 
 public class Ex_4_29 {
     
-    public static class OverRangeException extends Exception {
-        private static final long serialVersionUID = 1L;  
-        public OverRangeException(){}
-    }
     
     final static String[] monthName = new String[]{"January ","February ","March ","April ","May ","June ","July ","August ","September ","October ","November ","December "};
     final static int[] monthLength = new int[]{31,28,31,30,31,30,31,31,30,31,30,31};
@@ -68,4 +64,9 @@ public class Ex_4_29 {
         }
     }
 
+}
+
+class OverRangeException extends Exception {
+    private static final long serialVersionUID = 1L;  
+    public OverRangeException(){}
 }

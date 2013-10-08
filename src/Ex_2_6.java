@@ -2,11 +2,6 @@ import java.util.Scanner;
 
 public class Ex_2_6{
 
-    public static class OverRangeException extends Exception {
-        private static final long serialVersionUID = 1L;  
-        public OverRangeException(){}
-    }
-
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a number between 0 and 1000:");
@@ -35,3 +30,7 @@ public class Ex_2_6{
 
 }
 
+class OverRangeException extends Exception {
+    private static final long serialVersionUID = 1L;  
+    public OverRangeException(){}
+}
